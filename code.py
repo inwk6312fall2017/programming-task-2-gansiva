@@ -10,5 +10,5 @@ with open("Crime.csv", 'r') as myfile:
 		d1=dict()
 		print(value)
 		print(type(value))
-		d1[value]=d.get(value,0)+1
+		d1[value]=d.get("value",0)+1
 		print(d1)
