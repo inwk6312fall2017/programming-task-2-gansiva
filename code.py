@@ -1,14 +1,13 @@
 import string
 import csv
+d=dict()
+d1=dict()
 with open("Crime.csv", 'r') as myfile:
 	reader = csv.reader(myfile)
 	for row in reader:
-		d=dict()
-		d[row[8]]=row[7]
-		print(d)
-	for value in d:
-		d1=dict()
-		print(value)
-		print(type(value))
-		d1[value]=d.get("value",0)+1
-		print(d1)
+		print(row)
+		d[row[2]]=row[8],row[7]
+	print(d)
+	for key,value in d.items():
+		d1=
+	print(d1)
