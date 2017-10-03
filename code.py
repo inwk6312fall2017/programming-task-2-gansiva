@@ -5,9 +5,12 @@ d1=dict()
 with open("Crime.csv", 'r') as myfile:
 	reader = csv.reader(myfile)
 	for row in reader:
-		print(row)
 		d[row[2]]=row[8],row[7]
-	print(d)
+	#for x in d.items():
+	#	print(x)
 	for key,value in d.items():
-		d1=
-	print(d1)
+		d1[value]=d1.get(value,0)+1
+	for x in d1.items():
+		print(x)
+		
+	
